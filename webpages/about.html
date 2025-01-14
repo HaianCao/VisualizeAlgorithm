@@ -19,9 +19,54 @@
         -   Thông tin giới thiệu chung
         -   Slider ảnh CLB
     -->
-    <div>
-
-    </div>
+    <link rel="stylesheet" href="about.css">
+        <h1> CÂU LẠC BỘ TOÁN TIN HAMIC </h1>
+        <!-- Thông tin câu lạc bộ -->
+        <p></p>
+        <!-- Slider ảnh câu lạc bộ -->
+        <div>
+            <div>
+                <div >
+                    <button type="button" class="prev" onclick="plusSlider(-1)">&#11104</button>
+                    <div class="Slider">
+                        <img src="image1.jpg"/>
+                    </div>
+                    <div class="Slider">
+                        <img src="image2.jpg"/>
+                    </div>
+                    <div class="Slider">
+                        <img src="image3.jpg"/>
+                    </div>
+                    <button type="button" class="next" onclick="plusSlider(1)">&#11106</button>
+                    <script>
+                        var slideIndex = 1;
+                        showSlider(slideIndex);
+    
+                        function plusSlider(n) {
+                            showSlider(slideIndex += n);                        
+                        }
+    
+                        function showSlider(n) {
+                            var i;
+                            var slider = document.getElementsByClassName("Slider");
+                            if (n > slider.length) {
+                                slideIndex = 1;
+                            }
+                            if (n < 1) {
+                                slideIndex = slider.length;
+                            }
+                            for (i = 0; i < slider.length; i++) {
+                                 slider[i].style.display = "none";
+                             }
+                            slider[slideIndex-1].style.display = "block";
+                        }
+                    </script>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </link>
 
     <!-- 
         Phần giới thiệu thông tin chi tiết về các thành viên 
@@ -31,9 +76,72 @@
         mỗi khi bấm vào một người thì sẽ hiện thông tin của
         người đó và ẩn đi thông tin của người hiện tại.
     -->
-    <div>
-
-    </div>
+    <link rel="stylesheet" href="about.css">
+    <h1> ĐỘI NGŨ THỰC HIỆN </h1>
+        <div class="buttonlist">
+            <button type="button" class="members" onclick="currentSlider(1)">Cao Hải An</button>
+            <button type="button" class="members" onclick="currentSlider(2)">Nguyễn Hoàng Đạt</button>
+            <button type="button" class="members" onclick="currentSlider(3)">Lê Phú Bình</button>
+            <button type="button" class="members" onclick="currentSlider(4)">Nguyễn Cảnh Tùng</button>
+            <button type="button" class="members" onclick="currentSlider(5)">Nguyễn Phạm Mai Hoa</button>
+        </div>
+        <div class="opening" id="opening">
+            <p>Nhấn vào tên của một thành viên để xem thông tin của họ</p>
+        </div>
+        <div class="individualSlider">
+            <h2>Cao Hải An</h2>
+            <img src="image1.jpg"/>
+            <p><!--giới thiệu--> </p>
+        </div>
+        <div class="individualSlider">
+            <h2>Nguyễn Hoàng Đạt</h2>
+            <img src="image2.jpg"/>
+            <p><!--giới thiệu--> </P>
+        </div>
+        <div class="individualSlider">
+            <h2> Lê Phú Bình </h2>
+            <img src="image3.jpg"/>
+            <p><!--giới thiệu--> </p>
+        </div>
+        <div class="individualSlider">
+            <h2>Nguyễn Cảnh Tùng</h2>
+            <img src="image1.jpg"/>
+            <p><!--giới thiệu--> </p>
+        </div>
+        <div class="individualSlider">
+            <h2>Nguyễn Phạm Mai Hoa</h2>
+            <img src="image2.jpg"/>
+            <p><!--giới thiệu--> </p>
+        </div>
+        <script>
+            var individualSliderIndex = 1;
+            var individualslider = document.getElementsByClassName("individualSlider");
+            hideAllSlider();
+            function hideAllSlider() {
+                var i;
+                for (i = 0; i < individualslider.length; i++) {
+                    individualslider[i].style.display = "none";
+                }
+            }
+            function currentSlider(n) {
+                document.getElementById("opening").style.display = "none";
+                showIndividualSlider(individualSliderIndex = n);                        
+            }
+            function showIndividualSlider(n) {
+                var i;
+                if (n > individualslider.length) {
+                    individualSliderIndex = 1;
+                }
+                if (n < 1) {
+                    individualSliderIndex = individualslider.length;
+                }
+                for (i = 0; i < individualslider.length; i++) {
+                    individualslider[i].style.display = "none";
+                }
+                individualslider[individualSliderIndex-1].style.display = "block";
+            }
+        </script> 
+    </link>
 
     <!-- 
         Thông tin cuối trang (Footer) 

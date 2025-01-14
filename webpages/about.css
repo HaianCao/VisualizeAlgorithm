@@ -1,0 +1,55 @@
+h1 {
+    margin-top: 100px;
+    text-align: center;
+    font-family: "Monaco",monospace;
+}
+.prev {
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    float: left;
+    margin-left: 680px;
+}
+.prev:hover {
+    background-color: darkred;
+}
+.next {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.next:hover {
+    background-color: darkblue;
+}
+.Slider {
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.members {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.members:hover {
+    background-color: gray;
+}
+.buttonlist {
+
+    margin-left: 330px;
+    margin-right: 330px;
+}
+.opening {
+    text-align: center;
+}
+h2 {
+    text-align: center;    
+}
