@@ -1,0 +1,130 @@
+.qcksort {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 100px;
+    background-color: #f0f0f0;
+}
+#container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 400px;
+    width: 600px;
+    border: 1px solid black;
+    float: left;
+    margin-left: 200px;
+    margin-bottom: 10px;
+}
+.bar {
+    width: 30px;
+    margin: 0 3px;
+    background-color: #4c54af;
+    transition: all 0.3s ease;
+}
+.pivot {
+    background-color: #ff5722;
+}
+.highlight {
+    background-color: #ffeb3b;
+}
+.sortedBar {
+    background-color: #4CAF50;
+}
+.groupHighlight {
+    background-color: #4c84af;
+}
+.lowerPivotHighlight {
+    background-color: #954caf;
+}
+/* Vạch kẻ ngang cho pivot */
+.pivot-line {
+    position: absolute;
+    border-top: 2px solid red;
+    width: 600px;
+    z-index: 1;
+}
+#algorithm-steps {
+    width: 400px;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 5px;
+    border-color: #ffffff;
+    float: right;
+    margin-right: 200px;
+    color: white;
+}
+#controlButtons {
+    justify-self: flex-start;
+    margin-left: 200px;
+    background-color: #6c0703;
+    margin-top: 400px;
+    color: #f0f0f0;
+    padding-left: 5px;
+    height: 30px;
+    font-family: Arial, sans-serif;
+}
+.startButton {
+    background-color: #015901;
+    border: none;
+    color: white;
+    width: 65px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.startButton:hover {
+    opacity: 0.8;
+}
+
+.ctrlButton {
+    background-color: #6c0703;
+    border: none;
+    color: white;
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+}
+
+.ctrlButton:hover {
+    opacity: 0.4;
+}
+
+#runIcon:hover {
+    opacity: 0.6;
+}
+
+#runIcon {
+    background-color: #015901;
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+h1{
+    text-align: center;
+    margin: 16px;
+    font-family: Arial, sans-serif
+}
+#completeStatus {
+    justify-self: flex-start;
+    margin-left: 200px;
+    background-color: #015901;
+    margin-top: 400px;
+    color: #f0f0f0;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+}
