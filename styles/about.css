@@ -1,0 +1,81 @@
+h1 {
+    margin-top: 100px;
+    text-align: center;
+    font-family: "Monaco",monospace;
+}
+.prev {
+    background-color: #6c0703;
+    border: none;
+    color: white;
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 400px;
+    align-items: flex-start;
+    float: left;
+}
+.prev:hover {
+    opacity: 0.8;
+}
+.next {
+    background-color: #015901;
+    border: none;
+    color: white;
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 400px;
+    align-items: flex-end;
+    float: right;
+}
+.next:hover {
+    opacity: 0.8;
+}
+.Slider {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+img {
+    display: flex;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.members {
+    background-color: #6c0703;
+    border: none;
+    color: white;
+    width: auto;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    align-items: flex-start;
+}
+
+.members:hover {
+    background-color: #d5201a;
+}
+.buttonlist {
+    margin-left: 410px;
+    margin-right: 410px;
+    display: flex;
+}
+.opening {
+    text-align: center;
+}
+h2 {
+    text-align: center;    
+}
+.membersimg {
+    display: flex;
+    margin-left: 750px;
+    margin-right: 750px;
+}

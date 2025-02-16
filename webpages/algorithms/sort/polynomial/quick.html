@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quick Sort</title>
     <link rel="stylesheet" href="../../../../styles/navbar.css">
-
+    <link rel="stylesheet" href="../../../../styles/quick.css">
 </head>
 <body>
     <!-- 
         Thanh điều hướng (Navigation bar - navbar)
     -->
-    <div>
+    <div class="qcksort">
         <nav class="navbar">
             <div class="logo">
                 <a href="../../../../index.html"><img src="../../../../assets/images/logo_hamic.png" alt="Hamic Logo"></a>
@@ -29,7 +29,38 @@
         Phần visualize thuật toán
     -->
     <div>
-
+        <h1>Quick Sort Visualization</h1>
+        <div>
+            <div id="container"></div>
+                <button id="status" class="startButton" onclick="startQuickSort()">
+                    <div>Start</div>
+                </button>
+            <div id="algorithm-steps">
+                <pre>
+<div id="code1">partition(arr, low, high)</div>{<div id="code2">    const pivot = arr[high];</div><div id="code3">    i = low - 1;
+    for (j = low; j &#60 high; j++) {
+        if (arr[j] &#60= pivot) {
+            i++;
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+    }</div><div id="code4">    [arr[i + 1], arr[high]] = [arr[high], arr[i + 1]];
+    return i + 1;</div>}<div id="code5">quickSort(arr, low, high)</div>{
+    if (low &#60 high) {<div id="code6">        pi = partition(arr, low, high);</div><div id="code7">        quickSort(arr, low, pi - 1);</div><div id="code8">        quickSort(arr, pi + 1, high);</div>    }
+}
+<div id="code9">quickSort(arr, 0, arr.length - 1);</div>
+                </pre>
+            </div>
+            <div id="controlButtons">
+                <p>speed
+                <button class="ctrlButton" id="ctrlButton1" onclick="setSpeed(1)">x1</button>
+                <button class="ctrlButton" id="ctrlButton2" onclick="setSpeed(2)">x2</button>
+                <button class="ctrlButton" id="ctrlButton3" onclick="setSpeed(3)">x3</button>
+                <button id="runIcon" onclick="changeRunning()">&#9208</button>
+                </p>
+            </div>
+            <div id="completeStatus">Sorting Complete!</div>
+            <script src="../../../../scripts/quick.js"></script>
+        </div>
     </div>
 </body>
 </html>
